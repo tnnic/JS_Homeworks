@@ -209,9 +209,11 @@ console.log(count("ddddddd", "d"));
 // 20. Напишите функцию strip(str), которая удаляет все лишние
 // пробелы из строки str.
 function strip(str) {
-  return str.replace(/\s+/g, "");
+  return str.trim().replace(/\s+/g, " ");
 }
-console.log(strip("Напишите функцию strip(str), которая удаляет все лишние"));
+console.log(
+  strip("  Напишите функцию strip(str), которая удаляет все лишние   ")
+);
 // 21. Напишите функцию cutString(str, n), которая удаляет лишние
 // слова из строки str, оставив в ней n слов.
 function cutString(str, n) {
